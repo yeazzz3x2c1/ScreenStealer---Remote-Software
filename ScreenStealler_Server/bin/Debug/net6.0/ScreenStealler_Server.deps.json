@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "ScreenStealler_Server/1.0.0": {
+        "dependencies": {
+          "ScreenStealler_Network": "1.0.0.0"
+        },
+        "runtime": {
+          "ScreenStealler_Server.dll": {}
+        }
+      },
+      "ScreenStealler_Network/1.0.0.0": {
+        "runtime": {
+          "ScreenStealler_Network.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ScreenStealler_Server/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ScreenStealler_Network/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
