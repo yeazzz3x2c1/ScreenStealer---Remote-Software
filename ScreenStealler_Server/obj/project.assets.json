@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\WHJJ\\s\\ScreenStealler_Server\\ScreenStealler_Server.csproj",
+      "projectUniqueName": "F:\\WHJJ\\ScreenStealler\\ScreenStealler_Server\\ScreenStealler_Server.csproj",
       "projectName": "ScreenStealler_Server",
-      "projectPath": "F:\\WHJJ\\s\\ScreenStealler_Server\\ScreenStealler_Server.csproj",
+      "projectPath": "F:\\WHJJ\\ScreenStealler\\ScreenStealler_Server\\ScreenStealler_Server.csproj",
       "packagesPath": "C:\\Users\\zzz3x\\.nuget\\packages\\",
-      "outputPath": "F:\\WHJJ\\s\\ScreenStealler_Server\\obj\\",
+      "outputPath": "F:\\WHJJ\\ScreenStealler\\ScreenStealler_Server\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

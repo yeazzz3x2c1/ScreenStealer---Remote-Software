@@ -36,11 +36,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\WHJJ\\s\\ScreenStealler_Client\\ScreenStealler_Client.csproj",
+      "projectUniqueName": "F:\\WHJJ\\ScreenStealler\\ScreenStealler_Client\\ScreenStealler_Client.csproj",
       "projectName": "ScreenStealler_Client",
-      "projectPath": "F:\\WHJJ\\s\\ScreenStealler_Client\\ScreenStealler_Client.csproj",
+      "projectPath": "F:\\WHJJ\\ScreenStealler\\ScreenStealler_Client\\ScreenStealler_Client.csproj",
       "packagesPath": "C:\\Users\\zzz3x\\.nuget\\packages\\",
-      "outputPath": "F:\\WHJJ\\s\\ScreenStealler_Client\\obj\\",
+      "outputPath": "F:\\WHJJ\\ScreenStealler\\ScreenStealler_Client\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -62,8 +62,8 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "projectReferences": {
-            "F:\\WHJJ\\s\\ScreenStealler_Network\\ScreenStealler_Network.csproj": {
-              "projectPath": "F:\\WHJJ\\s\\ScreenStealler_Network\\ScreenStealler_Network.csproj"
+            "F:\\WHJJ\\ScreenStealler\\ScreenStealler_Network\\ScreenStealler_Network.csproj": {
+              "projectPath": "F:\\WHJJ\\ScreenStealler\\ScreenStealler_Network\\ScreenStealler_Network.csproj"
             }
           }
         }

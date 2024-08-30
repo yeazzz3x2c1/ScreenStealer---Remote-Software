@@ -9,3 +9,14 @@ F:\WHJJ\ScreenStealler_Network\obj\Debug\net6.0-windows\ScreenStealler_Network.d
 F:\WHJJ\ScreenStealler_Network\obj\Debug\net6.0-windows\refint\ScreenStealler_Network.dll
 F:\WHJJ\ScreenStealler_Network\obj\Debug\net6.0-windows\ScreenStealler_Network.pdb
 F:\WHJJ\ScreenStealler_Network\obj\Debug\net6.0-windows\ref\ScreenStealler_Network.dll
+F:\WHJJ\ScreenStealler\ScreenStealler_Network\bin\Debug\net6.0-windows\ScreenStealler_Network.deps.json
+F:\WHJJ\ScreenStealler\ScreenStealler_Network\bin\Debug\net6.0-windows\ScreenStealler_Network.dll
+F:\WHJJ\ScreenStealler\ScreenStealler_Network\bin\Debug\net6.0-windows\ScreenStealler_Network.pdb
+F:\WHJJ\ScreenStealler\ScreenStealler_Network\obj\Debug\net6.0-windows\ScreenStealler_Network.GeneratedMSBuildEditorConfig.editorconfig
+F:\WHJJ\ScreenStealler\ScreenStealler_Network\obj\Debug\net6.0-windows\ScreenStealler_Network.AssemblyInfoInputs.cache
+F:\WHJJ\ScreenStealler\ScreenStealler_Network\obj\Debug\net6.0-windows\ScreenStealler_Network.AssemblyInfo.cs
+F:\WHJJ\ScreenStealler\ScreenStealler_Network\obj\Debug\net6.0-windows\ScreenStealler_Network.csproj.CoreCompileInputs.cache
+F:\WHJJ\ScreenStealler\ScreenStealler_Network\obj\Debug\net6.0-windows\ScreenStealler_Network.dll
+F:\WHJJ\ScreenStealler\ScreenStealler_Network\obj\Debug\net6.0-windows\refint\ScreenStealler_Network.dll
+F:\WHJJ\ScreenStealler\ScreenStealler_Network\obj\Debug\net6.0-windows\ScreenStealler_Network.pdb
+F:\WHJJ\ScreenStealler\ScreenStealler_Network\obj\Debug\net6.0-windows\ref\ScreenStealler_Network.dll

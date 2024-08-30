@@ -5,13 +5,28 @@ namespace ScreenStealler_Network
 {
     internal class ScreenStealler_Client<T> : Remote_Client<T>
     {
+        private static Dictionary<long, ScreenStealler_Client<T>> id_2_clients = new Dictionary<long, ScreenStealler_Client<T>>();
+        public static bool Contains_Client_By_ID(long ID) => id_2_clients.ContainsKey(ID);
+
+
         private long ID = 0;
         private string Password = "";
 
         public ScreenStealler_Client(Socket socket, Dictionary<T, Type> packet_2_index) : base(socket, packet_2_index)
         {
-            ID = DateTime.Now.Ticks % 1000000000;
+            lock (id_2_clients)
+            {
+                do
+                {
+                    ID = DateTime.Now.Ticks % 1000000000;
+                } while (id_2_clients.ContainsKey(ID));
+                id_2_clients.Add(ID, this);
+            }
             Password = Global.Generate_Random_String(6);
+        }
+        protected new void On_Client_Offline()
+        {
+            lock (id_2_clients) id_2_clients.Remove(ID);
         }
         public long Get_ID() => ID;
         public int Get_Screen()

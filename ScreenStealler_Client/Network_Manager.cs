@@ -17,6 +17,7 @@ namespace ScreenStealler_Client
             Dictionary<Packet_Types, Type> packet_2_type = new Dictionary<Packet_Types, Type>()
             {
                 {Packet_Types.Send_ID, typeof(Packet_Send_ID) },
+                {Packet_Types.Connect_To_ID, typeof(Packet_Connect_To_ID) },
             };
             Client<Packet_Types> client = new Client<Packet_Types>(server_end_point, packet_2_type, Packet_Types.Heartbeat);
             client.Listen();

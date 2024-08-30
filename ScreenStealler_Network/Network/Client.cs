@@ -34,6 +34,7 @@ namespace ScreenStealler_Network.Network
             packet_2_index.Add(Heartbeat_Type, typeof(Packet_Heartbeat<T>));
         }
         public bool Is_Online() => is_online;
+        protected virtual void On_Client_Offline() { }
         public Client<T> Listen()
         {
             new Thread(() =>
@@ -41,7 +42,7 @@ namespace ScreenStealler_Network.Network
                 try
                 {
                     Console.WriteLine("start listen");
-                    
+
                     // Data_Length[3], Data_Length[2], Data_Length[1], Data_Length[0], Data[0 ~ Data_Length - 1], CRC
                     int length = 0;
                     byte[] temp = new byte[2048];
@@ -57,7 +58,7 @@ namespace ScreenStealler_Network.Network
                         length = socket.Receive(temp);
                         if (length < 1)
                             break;
-                           
+
                         for (int i = 0; i < length; i++)
                         {
                             if (data_receive_state < 4)
@@ -110,6 +111,7 @@ namespace ScreenStealler_Network.Network
                 }
                 Console.WriteLine("client offline");
                 is_online = false;
+                On_Client_Offline();
                 Offline?.Invoke();
             }).Start();
             return this;
@@ -142,7 +144,7 @@ namespace ScreenStealler_Network.Network
 
             T packet_index = packet.Get_Type();
 
-            result[current_index] = (byte) Convert.ToInt32(packet_index);
+            result[current_index] = (byte)Convert.ToInt32(packet_index);
             CRC += result[current_index++];
 
             for (int i = 3; i > -1; i--)

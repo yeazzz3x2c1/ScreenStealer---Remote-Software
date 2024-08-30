@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-F:\WHJJ\s\ScreenStealler_Client\obj\Debug\net6.0-windows\
+F:\WHJJ\ScreenStealler\ScreenStealler_Client\obj\Debug\net6.0-windows\
 ScreenStealler_Client
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
-F:\WHJJ\s\ScreenStealler_Client\App.xaml
+F:\WHJJ\ScreenStealler\ScreenStealler_Client\App.xaml
 11407045341
 
-9612671158
-1952021742440
+10381164937
+195-1844513727
 MainWindow.xaml;
 
-False
+True
 

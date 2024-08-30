@@ -9,6 +9,7 @@ namespace ScreenStealler_Client.Packet
     enum Packet_Types
     {
         Heartbeat,
-        Send_ID
+        Send_ID,
+        Connect_To_ID,
     }
 }
