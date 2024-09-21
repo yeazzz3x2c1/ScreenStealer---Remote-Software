@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ScreenStealler_Client"
         mc:Ignorable="d"
-        Title="Screen Stealler" SizeToContent="WidthAndHeight" WindowStartupLocation="CenterScreen" Width="225" >
+        Title="Screen Stealler" SizeToContent="WidthAndHeight" WindowStartupLocation="CenterScreen" MinWidth="225">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="Auto"/>
