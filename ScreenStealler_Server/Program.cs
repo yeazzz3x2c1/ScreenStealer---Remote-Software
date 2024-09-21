@@ -10,6 +10,9 @@ int main()
     server.Set_Client_Getter((socket, packet_2_index) => new ScreenStealler_Client<Packet_Types>(socket, packet_2_index));
     server.Register_Packet(Packet_Types.Send_ID, typeof(Packet_Send_ID));
     server.Register_Packet(Packet_Types.Connect_To_ID, typeof(Packet_Connect_To_ID));
+    server.Register_Packet(Packet_Types.Request_Screen, typeof(Packet_Request_Screen));
+    server.Register_Packet(Packet_Types.Get_Screen, typeof(Packet_Get_Screen));
+    server.Register_Packet(Packet_Types.Display_Screen, typeof(Packet_Display_Screen));
 
     server.Client_Online += (client) =>
     {

@@ -16,7 +16,16 @@ namespace ScreenStealler_Server.Packet.Packets
 
         public override byte[] Encode()
         {
-            return new byte[] { (byte)(Success ? 1 : 0) };
+
+            long ID = this.ID;
+            byte[] result = new byte[1 + 8];
+            result[0] = (byte)(Success ? 1 : 0);
+            for (int i = 0; i < 8; i++)
+            {
+                result[i + 1] = (byte)(ID & 0xff);
+                ID >>= 8;
+            }
+            return result;
         }
 
         public override void Execute(Client<Packet_Types> client)

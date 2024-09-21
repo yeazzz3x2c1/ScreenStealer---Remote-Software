@@ -16,6 +16,9 @@ namespace ScreenStealler_Client.Packets
         public override void Decode(byte[] raw_data)
         {
             success = raw_data[0] == 1;
+            ID = 0;
+            for (int i = 0; i < 8; i++)
+                ID |= raw_data[i + 1] << (i << 3);
         }
         public void Set_ID(long ID)
         {
@@ -23,6 +26,7 @@ namespace ScreenStealler_Client.Packets
         }
         public override byte[] Encode()
         {
+            long ID = this.ID;
             byte[] result = new byte[8];
             for (int i = 0; i < 8; i++)
             {
@@ -34,7 +38,15 @@ namespace ScreenStealler_Client.Packets
 
         public override void Execute(Client<Packet_Types> client)
         {
-            MessageBox.Show("連線結果: " + success);
+            //
+            if (!success)
+            {
+                MessageBox.Show("連線失敗");
+                return;
+            }
+            Packet_Request_Screen packet = new Packet_Request_Screen();
+            packet.Set_ID(ID);
+            client.Send_Message(packet);
         }
 
         public override Packet_Types Get_Type() => Packet_Types.Connect_To_ID;

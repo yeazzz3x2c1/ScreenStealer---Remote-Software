@@ -11,5 +11,8 @@ namespace ScreenStealler_Client.Packet
         Heartbeat,
         Send_ID,
         Connect_To_ID,
+        Request_Screen,
+        Get_Screen,
+        Display_Screen,
     }
 }

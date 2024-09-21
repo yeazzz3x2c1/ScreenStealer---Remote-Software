@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "M+DG/TjkKwS8tpmZHKxa3XSTn65TfoCr1K/JJ2a1ZcbtVLB/azjdMJVWpWLL7nd0n+9MDVrLoDCm7vbqp5+fwQ==",
+  "dgSpecHash": "2xD5qj6AwtlqH6nyXDo61TQSd8ihpY4XQzmjVCM8ovgpblXVtK+cDqdi7+p5CmRHoi8Xuo0Dk1sV2k7JU58EZQ==",
   "success": true,
   "projectFilePath": "F:\\WHJJ\\ScreenStealler\\ScreenStealler_Client\\ScreenStealler_Client.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\zzz3x\\.nuget\\packages\\microsoft.win32.systemevents\\8.0.0\\microsoft.win32.systemevents.8.0.0.nupkg.sha512",
+    "C:\\Users\\zzz3x\\.nuget\\packages\\system.drawing.common\\8.0.8\\system.drawing.common.8.0.8.nupkg.sha512"
+  ],
   "logs": []
 }

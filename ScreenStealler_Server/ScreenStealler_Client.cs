@@ -7,7 +7,7 @@ namespace ScreenStealler_Network
     {
         private static Dictionary<long, ScreenStealler_Client<T>> id_2_clients = new Dictionary<long, ScreenStealler_Client<T>>();
         public static bool Contains_Client_By_ID(long ID) => id_2_clients.ContainsKey(ID);
-
+        public static ScreenStealler_Client<T> Get_Client_By_ID(long ID) => id_2_clients[ID];
 
         private long ID = 0;
         private string Password = "";
