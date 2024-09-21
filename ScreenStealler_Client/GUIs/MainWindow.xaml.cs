@@ -36,7 +36,7 @@ namespace ScreenStealler_Client
             };
             Loaded += delegate
             {
-                client = Network_Manager.Create_Client(new IPEndPoint(IPAddress.Parse("111.255.231.7"), 25535));
+                client = Network_Manager.Create_Client(new IPEndPoint(IPAddress.Parse("127.0.0.1"), 25535));
                 client.Send_Message(new Packet_Send_ID());
             };
             Closing += delegate
