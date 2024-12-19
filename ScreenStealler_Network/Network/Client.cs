@@ -1,10 +1,15 @@
-﻿using ScreenStealler_Network.Network.Packets;
+﻿//## Author Information
+//-**Author**: Feng-Hao Yeh
+//-**Email**:
+//  - Recommended: zzz3x2c1@gmail.com
+//  - Alternate: yeh.feng.hao.110@gmail.com
+//  - Work: yeh.feng.hao@try-n-go.com
+
+using ScreenStealler_Network.Network.Packets;
 using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.Net;
 using System.Net.Sockets;
-using System.Printing.IndexedProperties;
 using System.Threading;
 
 

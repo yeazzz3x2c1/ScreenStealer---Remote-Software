@@ -1,29 +1,33 @@
-﻿
-using ScreenStealler_Network;
+﻿//## Author Information
+//-**Author**: Feng-Hao Yeh
+//-**Email**:
+//  - Recommended: zzz3x2c1@gmail.com
+//  - Alternate: yeh.feng.hao.110@gmail.com
+//  - Work: yeh.feng.hao@try-n-go.com
+
 using ScreenStealler_Network.Network;
+using ScreenStealler_Server;
 using ScreenStealler_Server.Packet;
-using ScreenStealler_Server.Packet.Packets;
+
 int main()
 {
     //Server<Packet_Types> server = new Server<Packet_Types>(Packet_Types.Heartbeat, new Heartbeat_Type_Getter());
-    Server<Packet_Types> server = new Server<Packet_Types>(() => Packet_Types.Heartbeat);
-    server.Set_Client_Getter((socket, packet_2_index) => new ScreenStealler_Client<Packet_Types>(socket, packet_2_index));
-    server.Register_Packet(Packet_Types.Send_ID, typeof(Packet_Send_ID));
-    server.Register_Packet(Packet_Types.Connect_To_ID, typeof(Packet_Connect_To_ID));
-    server.Register_Packet(Packet_Types.Request_Screen, typeof(Packet_Request_Screen));
-    server.Register_Packet(Packet_Types.Get_Screen, typeof(Packet_Get_Screen));
-    server.Register_Packet(Packet_Types.Display_Screen, typeof(Packet_Display_Screen));
 
-    server.Client_Online += (client) =>
+    Server stealler_server = new Server(25535);
+    stealler_server.On_Building_Up += delegate
     {
-        Console.WriteLine($"Remote online: {client.Get_Remote_End_Point()}");
-    };
+        Server<Packet_Types> network_server = stealler_server.Get_Network_Server();
+        network_server.Client_Online += (client) =>
+        {
+            Console.WriteLine($"Remote online: {client.Get_Remote_End_Point()}");
+        };
 
-    server.Client_Offline += (client) =>
-    {
-        Console.WriteLine($"Remote offline: {client.Get_Remote_End_Point()}");
+        network_server.Client_Offline += (client) =>
+        {
+            Console.WriteLine($"Remote offline: {client.Get_Remote_End_Point()}");
+        };
     };
-    server.Build_Up(25535);
+    stealler_server.Build_Up(25535);
     return 0;
 }
 main();

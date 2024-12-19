@@ -1,10 +1,12 @@
-﻿using ScreenStealler_Client.Packet;
+﻿//## Author Information
+//-**Author**: Feng-Hao Yeh
+//-**Email**:
+//  - Recommended: zzz3x2c1@gmail.com
+//  - Alternate: yeh.feng.hao.110@gmail.com
+//  - Work: yeh.feng.hao@try-n-go.com
+
+using ScreenStealler_Client.Packet;
 using ScreenStealler_Network.Network;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ScreenStealler_Client.Packets
 {
